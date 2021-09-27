@@ -19,17 +19,25 @@ console.log(food.replace('meh', 'so good'));
 
 // 6.
 var basic = 'This is Cool';
-var basicUp = 'THIS IS COOL';
-var basicDOwn = 'this is cool';
-console.log(basic);
-console.log(basicUp);
-console.log(basicDOwn);
+var basicUp = basic.toUpperCase();
+var basicDown = basic.toLowerCase();
+console.log(basic + basicUp + basicDown);
 
 // 7.
 var word = 'banana';
-var letters = word.split();
+var letters = word.split('');
 console.log(letters);
 
+// 8.
 var age = 27;
 var template = `I'm ${age} years old`;
 console.log(template);
+
+// Bonus
+var changed = 'Bonjour';
+console.log(changed.replaceAll('o', 'a'));
+
+var random = Math.random();
+console.log(random * 10);
+
+
