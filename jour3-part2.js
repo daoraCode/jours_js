@@ -10,26 +10,19 @@ for (var i = startRange; i < limitRange; i++) {
   if (nb % 2 === 0) {
     console.log(i + ' : PAIR');
     sum = sum + nb;
-  } 
+  }
 }
 console.log(sum + ' : Somme de nombre pairs');
-// -----------------------------------------------------
-console.log("");
-console.log("");
-console.log("");
-console.log("");
-console.log("");
-console.log("");
-console.log("");
-console.log("");
-console.log("");
-console.log("");
-console.log("");
-console.log("");
-console.log("");
-console.log("");
-console.log("");
-console.log("");
+
+// -------------------------------
+
+
+
+
+
+
+
+
 
 
 // 2. Nombre impairs
@@ -43,17 +36,30 @@ for (var i = startRange; i < limitRange; i++) {
   if (newNb % 2 !== 0) {
     console.log(i + ' : IMPAIR');
     newSum = newSum + newNb;
-  } 
+  }
 }
 console.log(newSum + ' : Somme de nombre impairs');
+
+// -------------------------------
+
+
 
 
 
 // 3 - Puissance et racine carrée
-
-var numbers = [1, 2, 3, 4 , 5];
+// 3. 1 - A l'aide d'une boucle for, boucler a travers le tableau numbers. Remplir le tableau squares avec la puissance 2 
+// (puissance au carré) de l'élément courant (index i) du tableau numbers.
+// 3. 2 - A l'aide d'une autre boucle for, boucler a travers le tableau squares. 
+// Remplir le tableau roots avec la racine carré de l'élément courant (index i) du tableau squares
+var numbers = [1, 2, 3, 4, 5];
 var squares = [];
 var roots = [];
-
 // for (départ, condition, incrémentation) {
 // }
+for(var index = numbers[0]; index <= numbers.length ** 2; index++) {
+    
+    // console.log(index);
+}
+
+// -----------------------------------------------------
+
