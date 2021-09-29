@@ -69,24 +69,31 @@ if (random === 6) {
 // Bonus 2.
 var month = 'January';
 switch (month) {
+  case 'December':
   case 'January':
-    console.log('Winter is coming');
+  case 'February':
+    console.log('Winter');
     break;
   case 'March':
-    console.log('Spring is there');
+  case 'April':
+  case 'May':
+    console.log('Spring');
     break;
   case 'June':
-    console.log('This summer');
+  case 'July':
+  case 'August':
+    console.log('Summer');
     break;
   case 'September':
-    console.log('Autumn, leaves fall');
+  case 'October':
+  case 'November':
+    console.log('Autumn');
     break;
   default:
-    console.log('NOTHING :(');
+    console.log('No season');
 }
 
 
 
 // Bonus 3.
-
 var roundedNumber = 3.6;

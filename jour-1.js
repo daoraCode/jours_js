@@ -37,6 +37,8 @@ console.log(template);
 var changed = 'Bonjour';
 console.log(changed.replaceAll('o', 'a'));
 
+
+
 var random = Math.random();
 console.log(random * 10);
 
