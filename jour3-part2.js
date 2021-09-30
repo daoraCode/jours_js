@@ -1,4 +1,4 @@
-// // 1 - Nombre pairs
+// ## 1 - Nombre pairs
 // // determination de la limite (47) et du début (11)
 // var limitRange = 47;
 // var startRange = 11;
@@ -14,9 +14,7 @@
 // }
 // // console.log(sum + ' : Somme de nombre pairs'+ '\n');
 
-// // -------------------------------
-
-// // 2. Nombre impairs
+// ## 2. Nombre impairs
 // var limitRange = 588;
 // var startRange = 109;
 // var newNb = 0;
@@ -31,21 +29,17 @@
 // }
 // // console.log(newSum + ' : Somme de nombre impairs');
 
-// -------------------------------
-
-// 3 - Puissance et racine carrée
+// ## 3 - Puissance et racine carrée
 // 3. 1 - A l'aide d'une boucle for, boucler a travers le tableau numbers. Remplir le tableau squares avec la puissance 2
 // (puissance au carré) de l'élément courant (index i) du tableau numbers.
 // 3. 2 - A l'aide d'une autre boucle for, boucler a travers le tableau squares.
 // Remplir le tableau roots avec la racine carré de l'élément courant (index i) du tableau squares
-var numbers = [1, 2, 3, 4, 5];
 // var numbers = [index0, index1, index2, index3, index4];
-var squares = []; // tableau vide
-var roots = []; // second tableau vide
-
+// var numbers = [1, 2, 3, 4, 5];
+// var squares = []; // tableau vide
+// var roots = []; // second tableau vide
 // for (départ, condition, incrémentation) {
 // }
-
 // for(var i = 0; i <= sentence.length - 1; i++) {
 // inversed = sentence[i] + inversed;
 // }
@@ -61,18 +55,41 @@ var roots = []; // second tableau vide
 // console.log(roots);
 // -----------------------------------------------------
 
-// // 4 - Table de multiplication v1
-var multiply = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-var table = '3';
-var operand = 'x';
-for (var i = 0; i < multiply.length; i++) {
-  console.log(`${table} ${operand} ${multiply[i]} = ${multiply[i] * 3}`);
-}
-
+// ## 4 - Table de multiplication v1
+// var multiply = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// var table = '3';
+// var operand = 'x';
+// for (var i = 0; i < multiply.length; i++) {
+//   console.log(`${table} ${operand} ${multiply[i]} = ${multiply[i] * 3}`);
+// }
 
 // ## 5 - Table de multiplication v2
-
-// - *Indice: on peut mettre une boucle `for` dans une boucle `for`*
+// - Indice: on peut mettre une boucle `for` dans une boucle `for`*
 // - A l'aide d'une boucle `for`, afficher les nombres de 0 à 10 (avec `i`)
 // - Dans cette boucle `for`, créer une autre boucle `for` (utiliser `j` a la place de `i` en tant qu'index) allant elle aussi de 0 à 10
 // - Afficher les tables de multiplications de chaque chiffres de 0 à 10, en sautant une ligne entre chaque tables.
+var mainArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var arrayToMultiply = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var mainOperand = 'x';
+for (var i = 0; i < mainArray.length; i++) {
+  console.log(
+    `${mainArray[j]} ${mainOperand} ${arrayToMultiply[i]} = ${
+      mainArray[j] * arrayToMultiply[i]
+    }` + '\n'
+  );
+  for (var j = 0; j < mainArray.length; j++) {
+    console.log(
+      `${mainArray[i]} ${mainOperand} ${arrayToMultiply[j]} = ${
+        mainArray[i] * arrayToMultiply[j]
+      }`
+    );
+  }
+}
+
+
+// ## 6 - Factorielle v1
+// En mathématique, la factorielle d'un nombre est le produit (multiplication) 
+// des nombres entiers positifs inférieur ou égal à lui meme. 
+// On le note généralement avec un point d'exclamation après le nombre.
+// A l'aide d'une boucle `for`, calculer la factorielle de 7.
+
